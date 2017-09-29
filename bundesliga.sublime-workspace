@@ -1,0 +1,323 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"teams",
+				"teamsList"
+			],
+			[
+				"cli",
+				"clients"
+			],
+			[
+				"clien",
+				"clientsList"
+			],
+			[
+				"pr",
+				"products"
+			],
+			[
+				"prod",
+				"product"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<template>\n  <div id=\"app\">\n    <div id=\"classification\">\n\t\t<li v-for=\"team in teams.teamsList\">\n\t\t    {{ team.name }}\n\t\t  </li>\n\t\t  <div v-if=\"teams.count() > 0\">oi</div>\n\n    </div>\n    <div id=\"fixtures\"></div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'app'\n}\n</script>\n\n<style>\n#app {\n  font-family: 'Avenir', Helvetica, Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  text-align: center;\n  color: #2c3e50;\n  margin-top: 60px;\n}\n</style>\n",
+			"file": "src/App.vue",
+			"file_size": 439,
+			"file_write_time": 131511264424427496,
+			"settings":
+			{
+				"buffer_size": 507,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main.js",
+			"settings":
+			{
+				"buffer_size": 660,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 35.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/bundesliga",
+		"/C/wamp64/www/bundesliga/src",
+		"/C/wamp64/www/bundesliga/src/components",
+		"/C/wamp64/www/bundesliga/src/router"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/bundesliga/src/team.model.js",
+		"/C/wamp64/www/vendas/app/Client.php",
+		"/C/wamp64/www/vendas/.env",
+		"/C/wamp64/www/vendas/bootstrap/app.php",
+		"/C/wamp64/www/vendas/config/app.php",
+		"/C/wamp64/www/vendas/resources/views/reports.blade.php",
+		"/C/wamp64/www/fiergs/sistema/themes/fiergs/woocommerce/js/checkout.js",
+		"/C/wamp64/www/vendas/resources/views/clients.blade.php",
+		"/C/wamp64/www/vendas/resources/views/form-client.blade.php",
+		"/C/wamp64/www/vendas/resources/views/layouts/app.blade.php",
+		"/C/wamp64/www/vendas/resources/views/reports/exportarConsultores.blade.php",
+		"/C/wamp64/www/vendas/resources/views/reports/consultor.blade.php",
+		"/C/wamp64/www/vendas/app/Http/Controllers/RelatoriosController.php",
+		"/C/wamp64/www/vendas/public/js/clients.js",
+		"/C/wamp64/www/vendas/app/User.php",
+		"/C/wamp64/www/vendas/app/Http/Controllers/ClientController.php",
+		"/C/wamp64/www/vendas/routes/web.php",
+		"/C/wamp64/www/vendas/resources/views/home.blade.php",
+		"/C/wamp64/www/vendas/database/migrations/2016_12_20_202250_create_clients_products_relation.php",
+		"/C/wamp64/www/vendas/database/migrations/2016_12_20_202128_create_products_table.php",
+		"/C/wamp64/www/vendas/database/migrations/2016_12_20_200920_create_clients_table.php",
+		"/C/wamp64/www/vendas/resources/views/reports/exportarConsultor.blade.php",
+		"/C/wamp64/www/vendas/resources/views/pdf/invoice.blade.php",
+		"/C/wamp64/www/vendas/app/Http/Controllers/PdfController.php",
+		"/C/wamp64/www/vendas/resources/views/pdf/invoice.pdf",
+		"/C/wamp64/www/vendas/vendor/barryvdh/laravel-dompdf/config/dompdf.php",
+		"/C/wamp64/www/vendas/composer.json",
+		"/C/wamp64/www/vendas/resources/views/reports/regiao.blade.php",
+		"/C/wamp64/www/vendas/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/wamp64/www/vendas/public/js/client.js",
+		"/C/wamp64/www/vendas/resources/views/new-client.blade.php",
+		"/C/wamp64/www/vendas/resources/assets/js/client.js",
+		"/C/wamp64/www/vendas/resources/views/auth/register.blade.php",
+		"/C/wamp64/www/vendas/resources/views/users.blade.php",
+		"/C/wamp64/www/vendas/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/wamp64/www/vendas/resources/views/edit-client.blade.php",
+		"/C/wamp64/www/vendas/app/Http/Controllers/IndexController.php",
+		"/C/wamp64/www/vendas/resources/views/client.blade.php",
+		"/C/wamp64/www/vendas/resources/views/user.blade.php",
+		"/C/wamp64/www/vendas/resources/views/new-user.blade.php",
+		"/C/wamp64/www/vendas/app/Http/Controllers/UserController.php",
+		"/C/wamp64/www/vendas/app/Product.php",
+		"/C/wamp64/www/vendas/app/Http/Controllers/Auth/LoginController.php",
+		"/C/wamp64/www/vendas/resources/views/login.blade.php",
+		"/C/wamp64/www/vendas/resources/views/welcome.blade.php",
+		"/C/wamp64/www/vendas/resources/views/layout.blade.php",
+		"/C/wamp64/www/vendas/app/Http/Controllers/ClientesController.php",
+		"/C/wamp64/www/vendas/app/CLient.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"logo",
+			"\"",
+			"label_",
+			"');\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/App.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								60
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 660,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								369,
+								369
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bundesliga.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
