@@ -3,30 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Teams from './models/teams.model'
 
 Vue.config.productionTip = false
-
-function Teams(){
-	this.teamsList = new Array();
-
-	this.addTeam = function(team){
-		this.teamsList.push(team);
-	}
-};
-
-function Team (name,id,logo){
-	this.name = name;
-	this.id = id;
-	this.logo = logo;
-
-	this.win = 0;
-	this.draw = 0;
-	this.lose = 0;
-}
-
-
-
-
 
 /* eslint-disable no-new */
 new Vue({
@@ -34,9 +13,6 @@ new Vue({
   router,
   template: '<App/>',
   components: { App },
-  data : {
-  	teams: new Teams(),
-  }
   
 })
 

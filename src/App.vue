@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <div id="classification">
-		
-		  <div v-if="teams.count() > 0">oi</div>
-
-    </div>
-    <div id="fixtures"></div>
+   <h1>{{ msg }}</h1>
+   <div v-for="team in teams"></div>
   </div>
 </template>
 
 <script>
+import Teams from "./models/teams.model.js";
+import Team from "./models/team.model.js";
+
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App',
+	  teams : new Teams(),
+    }
+  }, 
+  methods : {
+  
+  }
 }
 </script>
 
