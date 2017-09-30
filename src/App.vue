@@ -1,24 +1,37 @@
 <template>
   <div id="app">
    <h1>{{ msg }}</h1>
-   <div v-for="team in teams"></div>
+   <div v-for="team in teams">
+   	<br/> {{team.id}} - {{team.name}} 
+   </div>
   </div>
 </template>
 
 <script>
-import Teams from "./models/teams.model.js";
-import Team from "./models/team.model.js";
 
 export default {
   name: 'app',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-	  teams : new Teams(),
+	  teams : [],
     }
   }, 
   methods : {
-  
+  	addTeam: function(id,name){
+  		var self = this;
+  		var obj = {id : id, name : name};
+  		self.teams.push(obj);
+  	}
+  },
+  mounted: function(){
+  	this.axios.get('https://www.openligadb.de/api/getavailableteams/bl1/2017').then((teams) => {
+  		console.log(teams.data.length);
+  		for(var i = 0; i < teams.data.length; ++i){
+			var team = teams.data[i];
+  			this.addTeam(team.TeamId,team.TeamName);
+  		}
+  	});
   }
 }
 </script>
