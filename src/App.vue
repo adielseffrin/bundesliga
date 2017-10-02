@@ -36,45 +36,48 @@
 	</tbody>
    </table>
    </div>
-   <div class="schedule" v-if="schedule.length > 0">
-   	<table>
-	<thead>
-		<tr>
-			<th> 
-			<span v-on:click="prevRound" class="round prev"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </span>
-			 {{actualRound}} 
-			 <span v-on:click="nextRound" class="round next"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </span>
-			 </th>
-			
-		</tr>	
-	</thead>
-	<tbody>
-		<tr v-for="s in schedule" v-if="s.round == activeRound">
-			<td> 
-				<div class="match-result">
-					<div class="match-team1">
-						<div class="descript">
-							<img v-bind:src="s.team1.TeamIconUrl"><br/>
-							{{s.team1.ShortName}}
+	<div class="schedule" v-if="schedule.length > 0">
+		<table>
+			<thead>
+				<tr>
+					<th> 
+					<span v-on:click="prevRound" class="round prev"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </span>
+					 {{actualRound}} 
+					 <span v-on:click="nextRound" class="round next"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </span>
+					 </th>
+					
+				</tr>	
+			</thead>
+			<tbody>
+				<tr v-for="s in schedule" v-if="s.round == activeRound">
+					<td> 
+						<div class="match-result">
+							<div class="match-team1">
+								<div class="descript">
+									<img v-bind:src="s.team1.TeamIconUrl"><br/>
+									{{s.team1.ShortName}}
+								</div>
+								<div class="score"> {{s.score1}} </div>
+							</div>
+								<div class="versus"> x </div>
+							<div class="match-team2">
+								<div class="descript">
+									<img v-bind:src="s.team2.TeamIconUrl"><br/>
+									{{s.team2.ShortName}}
+								</div>
+								<div class="score"> {{s.score2}} </div>
+							</div>
 						</div>
-						<div class="score"> {{s.score1}} </div>
-					</div>
-						<div class="versus"> x </div>
-					<div class="match-team2">
-						<div class="descript">
-							<img v-bind:src="s.team2.TeamIconUrl"><br/>
-							{{s.team2.ShortName}}
-						</div>
-						<div class="score"> {{s.score2}} </div>
-					</div>
-				</div>
-				<div class="match-date">{{s.date}} - {{s.place}}</div>
-			</td>
-		</tr>
-	</tbody>
-   </table>
-   </div>
-  </div>
+						<div class="match-date">{{s.date}} - {{s.place}}</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+   	</div>
+   	<div class="schedule" v-else="schedule.length > 0">
+		<img width="200" class="logo-lg" src="http://static.indiansuperleague.com/js/fwl_build/si-fwl/images/loader.gif" lt="bundesliga.com">
+   	</div>
+</div>
 </template>
 
 <script>
@@ -91,7 +94,7 @@ export default {
 	  lastUpdate : '',
 	  activeRound : 28947
     }
-  }, 
+  },
   methods : {
   	addTeam: function(team){
   		var self = this;
