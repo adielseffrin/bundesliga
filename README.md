@@ -5,6 +5,7 @@
 
 ## Pre-requisites
 > Virtualbox
+
 > Vagrant
 
 > Vue.js (if you want to run in dev mode)
